@@ -24,7 +24,7 @@ class WikipediaSuite extends FunSuite with BeforeAndAfterAll {
     sc.stop()
   }
 
-  // Conditions:
+  // Conditions :
   // (1) the language stats contain the same elements
   // (2) they are ordered (and the order doesn't matter if there are several languages with the same count)
   def assertEquivalentAndOrdered(given: List[(String, Int)], expected: List[(String, Int)]): Unit = {
